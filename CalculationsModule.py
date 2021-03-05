@@ -348,7 +348,7 @@ def evaluate_spline(point, e_spline, quadratic=True):
     points = e_spline[1]
     equations = e_spline[0]
     equation_index = 0
-    equation_offset = 3 if quadratic else 0
+    equation_offset = 3 if quadratic else 4
     for i in range(len(points) - 1):
         if points[i + 1][0] >= point >= points[i][0]:
             equation_index = i * equation_offset
